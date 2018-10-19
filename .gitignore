@@ -5,3 +5,7 @@ work
 .settings
 .classpath
 .project
+
+# InjelliJ files
+.idea/
+*.iml
