@@ -15,7 +15,7 @@
   <version>2.12.1-SNAPSHOT</version>
 
   <properties>
-    <jenkins.version>1.642.4</jenkins.version>
+    <jenkins.version>2.60.3</jenkins.version>
     <java.level>7</java.level>
     <workflow.version>1.8</workflow.version>
   </properties>
@@ -103,6 +103,20 @@
             <artifactId>workflow-support</artifactId>
             <version>${workflow.version}</version>
             <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.jenkins</groupId>
+            <artifactId>configuration-as-code</artifactId>
+            <version>1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.jenkins</groupId>
+            <artifactId>configuration-as-code-support</artifactId>
+            <version>1.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
